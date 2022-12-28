@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>UVERSE</title>
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/contents_mo.css">
+    <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
+    <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <script>
+        // <![CDATA[
+        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
+        catch (e) { }
+    // ]]>
+    </script>
+</head>
+<body class="color">
+    <div id="root" class="root">
+        <!-- wrapper -->
+        <div class="wrapper" id="wrapper">
+            <!-- header  -->
+            <header class="header campus" id="header">
+                <div class="inner-wrap">
+                    <div class="header_top">
+                        <h1><a href="#none"><img class="uverse_logo" src="../resources/images/campus_mo_logo.png" alt="유버스"></a></h1>
+                        <a href="#none" id="menu_btn">
+                            <span class="mainMenu_bar">메뉴열기</span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!--// header  -->
+
+            <!-- profile-drawer  -->
+            <div class="profile-drawer login">
+                <p class="text-center-lg"><strong>환영합니다!</strong></p>
+                <fieldset class="form">
+                    <legend>로그인</legend>
+                    <dl>
+                        <dt class="form-label"><label for="user-id">사용하실 닉네임을 입력하세요.</label></dt>
+                        <dd class="mgb26">
+                            <div class="form-control">
+                                <input type="text" id="user-id" placeholder="닉네임 (8자 이내로 입력)">
+                            </div>
+                            <p class="form-notice error">Support text / 에러문구</p>
+                        </dd>
+                        <dt class="form-label"><label for="user-id">사용하실 아바타를 선택하세요.</label></dt>
+                        <dd class="Avatar">
+                            <div class="form-control-group">
+                                <div class="profile-img">
+									<img src="../resources/images/profile-img.png" alt="">
+                                    <div class="form-check checked">
+                                        <input type="radio" name="radioSet" id="radio1"><label for="radio1">남성 기본</label>
+                                    </div>
+								</div>
+                                <div class="profile-img">
+									<img src="../resources/images/profile-img.png" alt="">
+                                    <div class="form-check checked">
+                                        <input type="radio" name="radioSet" id="radio2"><label for="radio2">여성 기본</label>
+                                    </div>
+								</div>
+                            </div>
+                            <p class="text-center mgt16"><span>아바타 외형은 마이룸에서 언제든지 변경 가능합니다.</span></p>
+                        </dd>
+                    </dl>
+                    <button type="button" class="btn mgt16">입장</button>
+                    <p class="text-center-sm mgt24 mgb16"><sapn>이미 보유한 아바타로 입장하시려면<br>로그인하세요.</sapn></p>
+                    <button type="button" class="btn-login">로그인</button>
+                </fieldset>
+            </div>
+            <!--// profile-drawer  -->
+
+        </div>
+        <!--// wrapper -->
+    </div>   
+</body>
+</html>

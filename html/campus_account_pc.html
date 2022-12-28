@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>UVERSE</title>
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/contents_pc.css">
+    <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
+    <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff'>
+</head>
+<body class="color">
+    <div id="root" class="root">
+        <!-- wrapper -->
+        <div class="wrapper" id="wrapper">
+            <!-- header  -->
+            <header class="header" id="header">
+                <div class="header_inner">
+                    <h1><a href="#none"><img src="../resources/images/campus_pc_logo.png" alt="유버스-캠퍼스"></a></h1>
+                    <nav class="gnb" id="gnb">
+                        <ul>
+                            <li class="gnb_off"><a href="#none">홈</a></li>
+                            <li class="gnb_off"><a href="#none">유버스 스쿨(초중고)</a></li>
+                            <li class="gnb_on"><a href="#none">유버스 캠버스(대학)</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                <span class="header_boder"></span>
+                <!-- nav hover_01 -->
+                <nav class="nav">
+                    <h2 class="hidden">네비게이션영역</h2>
+                    <ul class="nav_menu">
+                        <li>Why 유버스 캠퍼스?</li>
+                        <li>서비스 소개</li>
+                        <li>가입 문의</li>
+                        <li>자주묻는 질문</li>
+                        <li>토튜리얼(FAQ)</li>
+                        <li>제휴문의</li>
+                    </ul>
+                    <ul class="nav_btn">
+                        <!-- 로그인 상태 -->
+                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#">홍길동님</a></li>
+                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
+                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--// header  -->
+
+            <!-- layer  -->
+            <div class="layer account" id="dialog1" role="dialog" aria-modal="true" aria-labelledby="dialog_label1" aria-describedby="dialog_desc1" style="" tabindex="-1">
+                <dl>
+                    <dt class="layer-header">
+                        <h1 class="layer-title" id="dialog_label1">계정 연결</h1>
+                        <button type="button" class="layer-close"><span>레이어 닫기</span></button>
+                    </dt>
+                    <dd class="layer-contents" id="dialog_desc">
+                        <div class="sns-wrap">
+                            <button type="button" class="btn"><i class="btn-google"></i>구글로 시작하기</button>
+                            <button type="button" class="btn"><i class="btn-facebook"></i>페이스북으로 시작하기</button>
+                            <button type="button" class="btn"><i class="btn-kakao"></i>카카오로 시작하기</button>
+                            <button type="button" class="btn"><i class="btn-naver"></i>네이버로 시작하기</button>
+                            <button type="button" class="btn"><i class="btn-apple"></i>Apple로 시작하기</button>
+                            <button type="button" class="btn">휴대폰 번호로 로그인</button>
+                        </div>
+                        <div class="flex column">
+                            <p class="form-label">서비스 이용 안내</p>
+                            <p class="form-control">고객님의 원활한 서비스 이용 및 정보 보호를 위해 일부 서비스에 대한<br>필수 접근 권한 및 이용 약관에 대한 동의를 받고 있습니다. 아래 내용을<br>확인 후 이용해 주시기 바랍니다.</p>
+                            <button class="txt-btn mgt24">개인정보 처리방침 전문</button>
+                        </div>
+                        <div class="ui-toggle terms-wrap form-check">
+                            <div class="btn">
+                                <input type="checkbox" name="" id="allAgree">
+                                <label for="allAgree">약관 전체동의</label>
+                                <button type="button" aria-expanded="false" aria-controls="toggleContents" id="toggleTrigger" class="toggle-trigger"></button>
+                            </div>
+                            <ul class="terms toggle-contents" aria-labelledby="toggleTrigger" id="toggleContents">
+                                <li>
+                                    <input type="checkbox" name="" id="agree01">
+                                    <label for="agree01">(필수) 서비스 이용약관 동의</label>
+                                    <button type="button"><span class="text-next">보기</span></button>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="agree02">
+                                    <label for="agree02">(필수) 개인정보 수집 및 이용 동의</label>
+                                    <button type="button"><span class="text-next">보기</span></button>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="" id="agree03">
+                                    <label for="agree03">(필수) 개인정보 처리 및 위탁, 제3자</label>
+                                    <button type="button"><span class="text-next">보기</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <!--// layer  -->
+
+        </div>
+        <!--// wrapper -->
+    </div>
+    <script>
+
+		var $toggle= $('.ui-toggle');
+
+		
+		$toggle.each(function(){
+			if( $(this).data('init') ) return;
+			$(this).data('init' , true);
+
+			var $this = $(this);
+			var $trigger = $this.find('.toggle-trigger');
+			var $target = $this.find('.toggle-contents');
+			
+			$trigger.on('click', function(){
+				var isExpanded = $(this).attr('aria-expanded');
+				
+				$this.toggleClass('open');
+
+				if(isExpanded == 'false'){
+					$(this).attr('aria-expanded', true);
+					$target.slideDown(300);
+				}else{
+					$(this).attr('aria-expanded', false);
+					$target.slideUp(300);
+				}
+
+			});
+		});
+
+      </script> 
+</body>
+</html>

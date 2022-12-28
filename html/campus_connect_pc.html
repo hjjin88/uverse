@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>UVERSE</title>
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/contents_pc.css">
+    <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
+    <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff'>
+</head>
+<body class="color">
+    <div id="root" class="root">
+        <!-- wrapper -->
+        <div class="wrapper" id="wrapper">
+            <!-- header  -->
+            <header class="header" id="header">
+                <div class="header_inner">
+                    <h1><a href="#none"><img src="../resources/images/campus_pc_logo.png" alt="유버스-캠퍼스"></a></h1>
+                    <nav class="gnb" id="gnb">
+                        <ul>
+                            <li class="gnb_off"><a href="#none">홈</a></li>
+                            <li class="gnb_off"><a href="#none">유버스 스쿨(초중고)</a></li>
+                            <li class="gnb_on"><a href="#none">유버스 캠버스(대학)</a></li>
+                        </ul>
+                    </nav>
+                    </div>
+                <span class="header_boder"></span>
+                <!-- nav hover_01 -->
+                <nav class="nav">
+                    <h2 class="hidden">네비게이션영역</h2>
+                    <ul class="nav_menu">
+                        <li>Why 유버스 캠퍼스?</li>
+                        <li>서비스 소개</li>
+                        <li>가입 문의</li>
+                        <li>자주묻는 질문</li>
+                        <li>토튜리얼(FAQ)</li>
+                        <li>제휴문의</li>
+                    </ul>
+                    <ul class="nav_btn">
+                        <!-- 로그인 상태 -->
+                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#">홍길동님</a></li>
+                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
+                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--// header  -->
+
+            <!-- layer  -->
+            <div class="layer account connect">
+                <div>
+                    <div class="layer-header">
+                        <h1 class="layer-title" id="dialog_label1">학생/교직원 인증</h1>
+                        <button type="button" class="layer-close"><span>레이어 닫기</span></button>
+                    </div>
+                    <div class="layer-contents">
+                        <fieldset class="form">
+							<legend>이메일 인증</legend>
+                            <p class="text">현재 캠퍼스 입장 시 학교 이메일 인증이 필요합니다.<br>이메일을 입력해주세요.</p>
+                            <p class="form-notice">*발송된 인증 코드는 1시간 동안 유효합니다. 인증 코드를 받지 못한<br>경우 ‘메일 발송’을 눌러 새 인증 코드를 발송하세요.</p>
+							<dl>
+								<dt class="form-label">이메일 인증</dt>
+								<dd>
+                                    <div class="form-control-group">
+                                        <div class="form-control" style="position: relative;">
+                                            <input type="text" placeholder="이메일 입력 @sookmyung.ac.kr" id="이메일 입력">
+                                        </div>
+                                        <div class="auto">
+                                            <button type="button" class="btn">메일 발송</button>
+                                        </div>
+                                    </div>
+									<div class="form-control-group">
+                                        <div class="form-control" style="position: relative;">
+                                            <input type="text" maxlength="4" placeholder="인증 코드 입력" id="인증 코드 입력">
+                                            <span class="count">60 :00 남음</span>
+                                        </div>
+                                        <div class="auto">
+                                            <button type="button" class="btn">확인</button>
+                                        </div>
+									</div>
+								</dd>
+							</dl>
+						</fieldset>
+                        <div class="layer-btns">
+                            <button type="button" class="sec-btn cancel">나가기</button>
+                            <button type="button" class="sec-btn confirm">다음</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!--// layer  -->
+
+        </div>
+        <!--// wrapper -->
+    </div>
+</body>
+</html>
