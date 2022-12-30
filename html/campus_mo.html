@@ -24,8 +24,18 @@
 	// ]]>
 	</script>
                             <script>
-                                $('.menu_dd').click(function(){
-                                    $(this).toggleClass('acrive');
+                                $(document).ready(function() {
+                                    var $toggleButton = $('.menu_dd');
+                                    $toggleButton.on('click', function() {
+                                        $(this).toggleClass('active');
+                                        if($('#nav_open').contains('on') ){
+                                            $('#nav_open').remove('on');
+                                        }else {
+                                            $('#nav_open').add('on');
+                                        };
+                                        
+                                    // $(this).
+                                    });
                                 });
                             </script>
 </head>
@@ -49,7 +59,31 @@
                     </div>
                 </div>
             </header>
+<!-- 로그아웃_01 -->
+<div class="a">
 
+    <nav id="nav_open">
+        <div class="login_status_01">
+            <div class="login_be">
+                <img src="../resources/images/nav_login_img.png" alt="">
+                <p class="login_be_title">로그인/회원가입</p>
+            </div>
+            <div class="login_arrow_btn"><a href="#none"></a></div>
+        </div>
+        <div class="my_room"><a href="#none">마이룸 입장</a></div>
+        <ul class="mainMenu">
+           <li class="depth1"><a href="#">why 유버스 캠퍼스?</a></li>
+           <li class="depth1"><a href="#">서비스 소개</a></li>
+           <li class="depth1"><a href="#">자주하는 질문/튜토리얼</a></li>
+           <li class="depth1"><a href="#">가입 문의</a></li>
+           <li class="depth1"><a href="#">제휴 문의</a></li>
+        </ul>
+        <ul class="home_btns">
+            <li class="home_btn_01"><a href="#none">홈</a></li>
+            <li><a href="#none">유버스 스쿨(초중고)</a></li>
+        </ul>
+    </nav>
+</div>
             <!--// header  -->
             <!-- main  -->
             <main class="container">         
