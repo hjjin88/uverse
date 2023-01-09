@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko" class=" -webkit-">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>UVERSE</title>
+    <link rel="stylesheet" href="../resources/css/common.css">
+    <link rel="stylesheet" href="../resources/css/contents_mo.css">
+    <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
+    <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
+</head>
+<body class="color">
+    <div id="root" class="root">
+        <!-- wrapper -->
+        <div class="wrapper school_mo_wrap"" id="wrapper">
+            
+            <!-- header  -->
+            <header class="uverse_header" id="header">
+            </header>
+            <!--// header  -->
+
+            <!-- layer  -->
+            <div class="layer account connect certification">
+                <div>
+                    <div class="layer-header">
+                        <h1 class="layer-title" id="dialog_label1">사용자 인증</h1>
+                        <button type="button" class="layer-close" onclick="javascript:certi_hide();"><span>레이어 닫기</span></button>
+                    </div>
+                    <div class="layer-contents">
+                        <fieldset class="form certification_form">
+							<legend>사용자 인증</legend>
+							<dl>
+								<dt class="form-label">필수 항목</dt>
+								<dd>
+                                    <div class="form-control-group">
+                                        <div class="form-control">
+                                            <input type="text" placeholder="이름" name="name">
+                                        </div>
+                                        <div class="auto">
+                                            <button type="button" class="btn">확인</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-control-group">
+                                        <div class="form-control">
+                                            <input type="text" placeholder="휴대폰번호" name="phone_number">
+                                        </div>
+                                        <div class="auto">
+                                            <button type="button" class="btn">인증</button>
+                                        </div>
+                                    </div>
+                                    <div class="form-control-group">
+                                        <div class="form-control">
+                                            <input type="text" placeholder="인증번호" name="certification_number">
+                                        </div>
+                                    </div>
+								</dd>
+							</dl>
+                            <dl>
+								<dt class="form-label">선택 항목</dt>
+								<dd>
+                                    <div class="form-control-group">
+                                        <div class="form-control">
+                                            <input type="text" placeholder="이메일" name="email">
+                                        </div>
+                                        <div class="auto">
+                                            <button type="button" class="btn">확인</button>
+                                        </div>
+                                    </div>
+								</dd>
+							</dl>
+                            <dl>
+								<dt class="form-label">성별</dt>
+								<dd>
+                                    <div class="form-control-group">
+                                        <button type="button" class="gender_btn">남성</button>
+                                        <button type="button" class="gender_btn">여성</button>
+                                    </div>
+								</dd>
+                                <dd>
+                                    <div class="form-control-group school_search">
+                                        <div class="form-select">
+                                            <button type="button" class="form-select-btn">출생년도</button>
+                                            <div class="form-select-con">
+                                                <ul>
+                                                    <li><button type="button">2003</button></li>
+                                                    <li><button type="button">2002</button></li>
+                                                    <li><button type="button">2001</button></li>
+                                                    <li><button type="button">2000</button></li>
+                                                    <li><button type="button">1999</button></li>
+                                                    <li><button type="button">1998</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="school_search_btn">
+                                            <input type="text" placeholder="학교">
+                                            <button type="button"></button>
+                                        </div>
+                                    </div>
+								</dd>
+							</dl>
+                            <dl class="member_division">
+                                <dt class="form-label">회원구분</dt>
+								<dd>
+                                    <div class="form-control-group division_btns">
+                                        <input type="radio" name="division_btn" id="division_btn_01">
+                                        <label for="division_btn_01"><span>학생</span></label>
+                                        <input type="radio" name="division_btn" id="division_btn_02">
+                                        <label for="division_btn_02"><span>교직원</span></label>
+                                        <input type="radio" name="division_btn" id="division_btn_03">
+                                        <label for="division_btn_03"><span>외부 게스트</span></label>
+                                        <dl class="division_box division_box_01">
+                                            <dt class="form-label">학년반</dt>
+                                            <dd>
+                                                <div class="form-select">
+                                                    <button type="button" class="form-select-btn">학년</button>
+                                                    <div class="form-select-con">
+                                                        <ul>
+                                                            <li><button type="button">1학년</button></li>
+                                                            <li><button type="button">2학년</button></li>
+                                                            <li><button type="button">3학년</button></li>
+                                                            <li><button type="button">4학년</button></li>
+                                                            <li><button type="button">5학년</button></li>
+                                                            <li><button type="button">6학년</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-select">
+                                                    <button type="button" class="form-select-btn">반</button>
+                                                    <div class="form-select-con">
+                                                        <ul>
+                                                            <li><button type="button">1반</button></li>
+                                                            <li><button type="button">2반</button></li>
+                                                            <li><button type="button">3반</button></li>
+                                                            <li><button type="button">5반</button></li>
+                                                            <li><button type="button">6반</button></li>
+                                                            <li><button type="button">7반</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="division_box division_box_02">
+                                            <dt class="form-label">교직원</dt>
+                                            <dd>
+                                                <div class="form-select">
+                                                    <button type="button" class="form-select-btn">학년</button>
+                                                    <div class="form-select-con">
+                                                        <ul>
+                                                            <li><button type="button">1학년</button></li>
+                                                            <li><button type="button">2학년</button></li>
+                                                            <li><button type="button">3학년</button></li>
+                                                            <li><button type="button">4학년</button></li>
+                                                            <li><button type="button">5학년</button></li>
+                                                            <li><button type="button">6학년</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="form-select">
+                                                    <button type="button" class="form-select-btn">반</button>
+                                                    <div class="form-select-con">
+                                                        <ul>
+                                                            <li><button type="button">1반</button></li>
+                                                            <li><button type="button">2반</button></li>
+                                                            <li><button type="button">3반</button></li>
+                                                            <li><button type="button">5반</button></li>
+                                                            <li><button type="button">6반</button></li>
+                                                            <li><button type="button">7반</button></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                            <dd class="division_job">
+                                                <div class="form-control-group">
+                                                    <div class="form-control">
+                                                        <input type="text" placeholder="" name="job">
+                                                    </div>
+                                                    <div class="auto">
+                                                        <button type="button" class="btn">확인</button>
+                                                    </div>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="division_box division_box_03">
+                                            <dt class="form-label">외부 게스트</dt>
+                                            <dd class="form-control-group">
+                                                <ul class="form-control">
+                                                    <li>
+                                                        <input type='radio' name="out_guest" id="out_guest_01">
+                                                        <label for="out_guest_01"><span>학부모</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type='radio' name="out_guest" id="out_guest_02">
+                                                        <label for="out_guest_02"><span>졸업생</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="out_guest" id="out_guest_03">
+                                                        <label for="out_guest_03"><span>예비 입학생</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="radio" name="out_guest" id="out_guest_04">
+                                                        <label for="out_guest_04"><span>기타</span></label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="text" placeholder="기타 선택 시 입력란" name="etc" class="etc_text">
+                                                    </li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+								</dd>
+							</dl>
+						</fieldset>
+                        <div class="layer-btns">
+                            <button type="button" class="sec-btn">승인요청</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// wrapper -->
+    </div>
+
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/school_header_mo.html');
+    });
+</script>
+<!-- <script>
+    $(".form-select-btn").click(function() {
+        $(this).next("div").toggle();
+        $(this).toggleClass('open');
+        return false;
+    });
+    $(".form-select-con > ul > li").click(function() {
+    $(this).parents(".form-select-con").hide().parents(".form-select").children(".form-select-btn").text($(this).text());
+    $(this).parents(".form-select-con").hide().prependTo($(this).parents(".form-select-btn"));
+    });
+</script> -->
+</body>
+</html>
