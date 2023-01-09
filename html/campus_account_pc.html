@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_pc.css">
@@ -15,37 +19,9 @@
     <div id="root" class="root">
         <!-- wrapper -->
         <div class="wrapper" id="wrapper">
+            
             <!-- header  -->
-            <header class="header" id="header">
-                <div class="header_inner">
-                    <h1><a href="#none"><img src="../resources/images/campus_pc_logo.png" alt="유버스-캠퍼스"></a></h1>
-                    <nav class="gnb" id="gnb">
-                        <ul>
-                            <li class="gnb_off"><a href="#none">홈</a></li>
-                            <li class="gnb_off"><a href="#none">유버스 스쿨(초중고)</a></li>
-                            <li class="gnb_on"><a href="#none">유버스 캠버스(대학)</a></li>
-                        </ul>
-                    </nav>
-                    </div>
-                <span class="header_boder"></span>
-                <!-- nav hover_01 -->
-                <nav class="nav">
-                    <h2 class="hidden">네비게이션영역</h2>
-                    <ul class="nav_menu">
-                        <li>Why 유버스 캠퍼스?</li>
-                        <li>서비스 소개</li>
-                        <li>가입 문의</li>
-                        <li>자주묻는 질문</li>
-                        <li>토튜리얼(FAQ)</li>
-                        <li>제휴문의</li>
-                    </ul>
-                    <ul class="nav_btn">
-                        <!-- 로그인 상태 -->
-                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#">홍길동님</a></li>
-                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
-                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
-                    </ul>
-                </nav>
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
 
@@ -72,23 +48,23 @@
                         </div>
                         <div class="ui-toggle terms-wrap form-check">
                             <div class="btn">
-                                <input type="checkbox" name="" id="allAgree">
+                                <input type="checkbox" name="allAgree" id="allAgree" class="allAgree">
                                 <label for="allAgree">약관 전체동의</label>
                                 <button type="button" aria-expanded="false" aria-controls="toggleContents" id="toggleTrigger" class="toggle-trigger"></button>
                             </div>
                             <ul class="terms toggle-contents" aria-labelledby="toggleTrigger" id="toggleContents">
                                 <li>
-                                    <input type="checkbox" name="" id="agree01">
+                                    <input type="checkbox" name="agree01" id="agree01" class="agree">
                                     <label for="agree01">(필수) 서비스 이용약관 동의</label>
                                     <button type="button"><span class="text-next">보기</span></button>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="" id="agree02">
+                                    <input type="checkbox" name="agree02" id="agree02" class="agree">
                                     <label for="agree02">(필수) 개인정보 수집 및 이용 동의</label>
                                     <button type="button"><span class="text-next">보기</span></button>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="" id="agree03">
+                                    <input type="checkbox" name="agree03" id="agree03" class="agree">
                                     <label for="agree03">(필수) 개인정보 처리 및 위탁, 제3자</label>
                                     <button type="button"><span class="text-next">보기</span></button>
                                 </li>
@@ -98,39 +74,40 @@
                 </dl>
             </div>
             <!--// layer  -->
-
         </div>
         <!--// wrapper -->
     </div>
-    <script>
-
-		var $toggle= $('.ui-toggle');
-
-		
-		$toggle.each(function(){
-			if( $(this).data('init') ) return;
-			$(this).data('init' , true);
-
-			var $this = $(this);
-			var $trigger = $this.find('.toggle-trigger');
-			var $target = $this.find('.toggle-contents');
-			
-			$trigger.on('click', function(){
-				var isExpanded = $(this).attr('aria-expanded');
-				
-				$this.toggleClass('open');
-
-				if(isExpanded == 'false'){
-					$(this).attr('aria-expanded', true);
-					$target.slideDown(300);
-				}else{
-					$(this).attr('aria-expanded', false);
-					$target.slideUp(300);
-				}
-
-			});
-		});
-
-      </script> 
+<script>
+    var $toggle= $('.ui-toggle');
+    $toggle.each(function(){
+        if( $(this).data('init') ) return;
+        $(this).data('init' , true);
+        var $this = $(this);
+        var $trigger = $this.find('.toggle-trigger');
+        var $target = $this.find('.toggle-contents');
+        $trigger.on('click', function(){
+            var isExpanded = $(this).attr('aria-expanded');
+            $this.toggleClass('open');
+            if(isExpanded == 'false'){
+                $(this).attr('aria-expanded', true);
+                $target.slideDown(300);
+            }else{
+                $(this).attr('aria-expanded', false);
+                $target.slideUp(300);
+            }
+        });
+    });
+    $('document').ready( function() {
+        $( '.allAgree' ).click( function() {
+        $( '.agree' ).prop( 'checked', this.checked );
+        } );
+    } );
+</script> 
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/campus_header_pc.html');
+    });
+</script>
 </body>
 </html>

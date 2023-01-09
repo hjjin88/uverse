@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_mo.css">
@@ -11,26 +14,22 @@
     <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <script>
-        // <![CDATA[
-        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
-        catch (e) { }
-    // ]]>
-    </script>
+		// <![CDATA[
+		try {
+			window.addEventListener('load', function () {
+				setTimeout(scrollTo, 0, 0, 1);
+			}, false);
+		} catch (e) { }
+        // ]]>
+	</script>
 </head>
 <body class="color">
     <div id="root" class="root">
         <!-- wrapper -->
         <div class="wrapper" id="wrapper">
+
             <!-- header  -->
-            <header class="header campus" id="header">
-                <div class="inner-wrap">
-                    <div class="header_top">
-                        <h1><a href="#none"><img class="uverse_logo" src="../resources/images/campus_mo_logo.png" alt="유버스"></a></h1>
-                        <a href="#none" id="menu_btn">
-                            <span class="mainMenu_bar">메뉴열기</span>
-                        </a>
-                    </div>
-                </div>
+            <header class="uvers_header" id="header">
             </header>
             <!--// header  -->
 
@@ -57,23 +56,23 @@
                         </div>
                         <div class="ui-toggle terms-wrap form-check">
                             <div class="btn">
-                                <input type="checkbox" name="" id="allAgree">
+                                <input type="checkbox" name="allAgree" id="allAgree" class="allAgree">
                                 <label for="allAgree">약관 전체동의</label>
                                 <button type="button" aria-expanded="false" aria-controls="toggleContents" id="toggleTrigger" class="toggle-trigger"></button>
                             </div>
                             <ul class="terms toggle-contents" aria-labelledby="toggleTrigger" id="toggleContents">
                                 <li>
-                                    <input type="checkbox" name="" id="agree01">
+                                    <input type="checkbox" name="agree01" id="agree01" class="agree">
                                     <label for="agree01">(필수) 서비스 이용약관 동의</label>
                                     <button type="button"><span class="text-next">보기</span></button>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="" id="agree02">
+                                    <input type="checkbox" name="agree02" id="agree02" class="agree">
                                     <label for="agree02">(필수) 개인정보 수집 및 이용 동의</label>
                                     <button type="button"><span class="text-next">보기</span></button>
                                 </li>
                                 <li>
-                                    <input type="checkbox" name="" id="agree03">
+                                    <input type="checkbox" name="agree03" id="agree03" class="agree">
                                     <label for="agree03">(필수) 개인정보 처리 및 위탁, 제3자</label>
                                     <button type="button"><span class="text-next">보기</span></button>
                                 </li>
@@ -83,39 +82,40 @@
                 </dl>
             </div>
             <!--// layer  -->
-
         </div>
         <!--// wrapper -->
     </div>
-    <script>
-
-		var $toggle= $('.ui-toggle');
-
-		
-		$toggle.each(function(){
-			if( $(this).data('init') ) return;
-			$(this).data('init' , true);
-
-			var $this = $(this);
-			var $trigger = $this.find('.toggle-trigger');
-			var $target = $this.find('.toggle-contents');
-			
-			$trigger.on('click', function(){
-				var isExpanded = $(this).attr('aria-expanded');
-				
-				$this.toggleClass('open');
-
-				if(isExpanded == 'false'){
-					$(this).attr('aria-expanded', true);
-					$target.slideDown(300);
-				}else{
-					$(this).attr('aria-expanded', false);
-					$target.slideUp(300);
-				}
-
-			});
-		});
-
-      </script> 
+<script>
+    var $toggle= $('.ui-toggle');
+    $toggle.each(function(){
+        if( $(this).data('init') ) return;
+        $(this).data('init' , true);
+        var $this = $(this);
+        var $trigger = $this.find('.toggle-trigger');
+        var $target = $this.find('.toggle-contents');
+        $trigger.on('click', function(){
+            var isExpanded = $(this).attr('aria-expanded');
+            $this.toggleClass('open');
+            if(isExpanded == 'false'){
+                $(this).attr('aria-expanded', true);
+                $target.slideDown(300);
+            }else{
+                $(this).attr('aria-expanded', false);
+                $target.slideUp(300);
+            }
+        });
+    });
+    $( document ).ready( function() {
+        $( '.allAgree' ).click( function() {
+        $( '.agree' ).prop( 'checked', this.checked );
+        } );
+    } );
+</script> 
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/campus_header_mo.html');
+    });
+</script>
 </body>
 </html>

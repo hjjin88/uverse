@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_pc.css">
@@ -10,46 +14,31 @@
     <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff'>
+    <script>
+        function nic_box(){
+            $(".change_nic_box, .modal_back").show();
+        }
+        function login_btn(){
+            $(".login_btn_box").show();
+        }
+        function pop_hide(){
+            $(".change_nic_box, .modal_back").hide();
+        }
+    </script>
 </head>
 <body>
     <div id="root" class="root">
         <!-- wrapper -->
         <div class="wrapper" id="wrapper">
+            
             <!-- header  -->
-            <header class="header" id="header">
-                <div class="header_inner">
-                    <h1><a href="#none"><img src="../resources/images/campus_pc_logo.png" alt="유버스-캠퍼스"></a></h1>
-                    <nav class="gnb" id="gnb">
-                        <ul>
-                            <li class="gnb_off"><a href="#none">홈</a></li>
-                            <li class="gnb_off"><a href="#none">유버스 스쿨(초중고)</a></li>
-                            <li class="gnb_on"><a href="#none">유버스 캠버스(대학)</a></li>
-                        </ul>
-                    </nav>
-                    </div>
-                <span class="header_boder"></span>
-                <!-- nav hover_01 -->
-                <nav class="nav">
-                    <h2 class="hidden">네비게이션영역</h2>
-                    <ul class="nav_menu">
-                        <li>Why 유버스 캠퍼스?</li>
-                        <li>서비스 소개</li>
-                        <li>가입 문의</li>
-                        <li>자주묻는 질문</li>
-                        <li>토튜리얼(FAQ)</li>
-                        <li>제휴문의</li>
-                    </ul>
-                    <ul class="nav_btn">
-                        <!-- 로그인 상태 -->
-                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#">홍길동님</a></li>
-                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
-                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
-                    </ul>
-                </nav>
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
+
             <div class="fancy-header"><div class="fancy-header-gradient"></div></div>
             <main class="container campus">
+                <div class="modal_back"></div>
                 <div class="contents main" id="contents">
                 <!-- contents  -->
                     <section class="Partnership alliance" id="Partnership">
@@ -63,7 +52,7 @@
                                     <dd>
                                         <div class="form-control"><input type="text" id="회사/조직" placeholder="회사명/조직명을 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl class="form-flex">
                                     <div>
@@ -71,14 +60,14 @@
                                         <dd>
                                             <div class="form-control"><input type="text" id="성함" placeholder="이름을 입력해 주세요."></div>
                                         </dd>
-                                        <p class="form-notice error">필수 입력 값입니다.</p>
+                                        <p class="form-notice error">Support text / 에러문구</p>
                                     </div>
                                     <div>
                                         <dt class="form-label"><label for="회사/조직">연락처 <span class="required">필수입력</span></label></dt>
                                         <dd>
                                             <div class="form-control"><input type="text" id="연락처" placeholder="연락처를 입력해 주세요."></div>
                                         </dd>
-                                        <p class="form-notice error">필수 입력 값입니다.</p>
+                                        <p class="form-notice error">Support text / 에러문구</p>
                                     </div>
                                 </dl>
                                 <dl>
@@ -86,14 +75,14 @@
                                     <dd>
                                         <div class="form-control"><input type="text" id="제목" placeholder="메일주소를 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl>
                                     <dt class="form-label"><label for="홈페이지">홈페이지</label></dt>
                                     <dd>
                                         <div class="form-control"><input type="text" id="홈페이지" placeholder="홈페이지 주소를 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl>
                                     <dt class="form-label"><label for="문의/제안">문의/제안 <span class="required">필수입력</span></label></dt>
@@ -150,34 +139,49 @@
                                 </div>
                             </fieldset>
                         </form>
-                        <button type="button" class="sec-btn">접수하기</button>
+                        <button type="button" class="sec-btn" onclick="sec_btn()">접수하기</button>
                     </section>
-                    <footer class="footer" id="footer"> 
-                        <div class="inner_wrap">
-                            <div class="footer_top">
-                                <p class="footer_top_text">가입/일반문의 1544-0001<span class="footer_s_text">(평일 09:00 - 18:00)</span></p>
-                            </div>
-                            <ul class="footer_body">
-                                <li><a href="#none">회사소개</a></li>
-                                <li><a href="#none">이용약관</a></li>
-                                <li><a href="#none">개인정보처리방침</a></li>
-                            </ul>
-                            <ul class="footer_bottom">
-                                <li>㈜엘지유플러스 주소 서울특별시 용산구 한강대로</li>
-                                <li>대표이사 황현식</li>
-                                <li>사업자등록번호 220-81-39938</li>
-                                <li>통신판매신고 제 2015-서울용산-00481호</li>
-                                <li>사업자정보확인</li>
-                                <li>고객센터 1544-0001</li>
-                            </ul>
-                        </div> 
-                        <div class="footer_bar"></div>
+
+                     <!--// footer -->
+                     <footer class="footer" id="footer"> 
                     </footer>
+                     <!--// footer -->
+                     
                 </div>
             </main>
             <!--// main  -->
+            <!-- 제출완료 팝업 -->
+            <div class="alliance_pop">
+                <div class="layer alliance">
+                    <div>
+                        <div class="layer-header">
+                            <h1 class="layer-title">제출이 완료되었습니다.</h1>
+                        </div>
+                        <div class="layer-contents">
+                            <div class="inner-html">
+                                <p class="text">감사합니다.</p>
+                            </div>
+                        </div>
+                        <div class="layer-btns">
+                            <button type="button" class="sec-btn">확인</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--// wrapper -->
     </div>
+<script>
+    function sec_btn(){
+    $(".alliance_pop, .modal_back").show();
+}
+</script>
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/campus_header_pc.html');
+        $('#footer').load('/html/main_footer_pc.html');
+    });
+</script>
 </body>
 </html>

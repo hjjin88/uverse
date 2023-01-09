@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_mo.css">
@@ -12,11 +15,14 @@
     <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <script>
-        // <![CDATA[
-        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
-        catch (e) { }
-  // ]]>
-    </script>
+		// <![CDATA[
+		try {
+			window.addEventListener('load', function () {
+				setTimeout(scrollTo, 0, 0, 1);
+			}, false);
+		} catch (e) { }
+        // ]]>
+	</script>
 </head>
 <body>
     <div id="root" class="root">
@@ -49,35 +55,35 @@
                                     <dd>
                                         <div class="form-control"><input type="text" id="이름" placeholder="이름을 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl>
                                     <dt class="form-label"><label for="회사/조직">연락처 <span class="required">필수입력</span></label></dt>
                                     <dd>
                                         <div class="form-control"><input type="text" id="연락처" placeholder="연락처를 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl>
                                     <dt class="form-label"><label for="학교 이름">학교 이름 <span class="required">필수입력</span></label></dt>
                                     <dd>
                                         <div class="form-control"><input type="text" id="학교 이름" placeholder="학교 이름을 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl>
                                     <dt class="form-label"><label for="이메일 주소">이메일 주소 <span class="required">필수입력</span></label></dt>
                                     <dd>
                                         <div class="form-control"><input type="text" id="이메일 주소" placeholder="이메일주소를 입력해 주세요."></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl>
                                     <dt class="form-label"><label for="문의/제안">문의/제안 <span class="required">필수입력</span></label></dt>
                                     <dd>
                                         <div class="form-control"><textarea name="" id="문의/제안" placeholder="문의할 내용을 입력해 주세요."></textarea></div>
                                     </dd>
-                                    <p class="form-notice error">필수 입력 값입니다.</p>
+                                    <p class="form-notice error">Support text / 에러문구</p>
                                 </dl>
                                 <dl class="last">
                                     <dt class="form-label"><label for="개인정보 수집 이용 동의">개인정보 수집 이용 동의</label></dt>
@@ -162,5 +168,13 @@
         </div>
     </div>
     <script type="text/javascript" src="../resources/js/common_mo.js"></script>
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('../../sub_header.html');
+        $('#footer').load('../../main_footer.html');
+        $('.popup-pdf-mobile').load('../../download_popup.html');
+    });
+</script>
 </body>
 </html>

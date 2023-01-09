@@ -1,3 +1,4 @@
+// 스와이프
 var swiper = new Swiper(".sec1_mySwiper", {
     slidesPerView: 1,
     loop: true,
@@ -14,7 +15,7 @@ var tabItem = $('.sec4_con .swiper_btn li');
 var mySwiper = new Swiper('.sec4_mySwiper', {
   direction: 'horizontal',
   slidesPerView: 1,
-  loop: false,
+  loop: true,
   centeredSlides: true,
   pagination: {
     el: '.swiper-pagination',
@@ -37,3 +38,6 @@ tabItem.click(function () {
 function changeTab(index) {
   tabItem.removeClass('active').eq(index).addClass('active');
 }
+
+
+

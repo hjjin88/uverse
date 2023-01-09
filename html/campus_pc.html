@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="ko" class=" -webkit-">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
-    <link rel="stylesheet" href="../resources/css/campus_pc.css">
+    <link rel="stylesheet" href="../resources/css/contents_pc.css">
     <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
     <script type="text/javascript" src="../resources/js/prefixfree.min.js"></script>
     <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
-    <!-- <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff'> -->
 </head>
 <body>
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper uvers_wrap" id="wrapper">
+
             <!-- header  -->
-            <header class="header" id="header">
+            <header class="uverse_header" id="header">
                 <div class="header_inner">
                     <h1><a href="#none"><img src="../resources/images/campus_pc_logo.png" alt="유버스-캠퍼스"></a></h1>
                     <nav class="gnb" id="gnb">
@@ -34,7 +36,7 @@
                 <!-- nav hover_01 -->
                 <nav class="nav">
                     <h2 class="hidden">네비게이션영역</h2>
-                    <ul class="nav_menu">
+                    <ul class="nav_menu nav_menu_01">
                         <li>Why 유버스 캠퍼스?</li>
                         <li>서비스 소개</li>
                         <li>가입 문의</li>
@@ -43,14 +45,15 @@
                         <li>제휴문의</li>
                     </ul>
                     <ul class="nav_btn">
-                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
-                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
+                        <li class="login_btn">
+                            <a href="#none/">로그인/회원가입</a></li>
+                        <li class="my_room_btn"><a href="#none"/>마이룸 입장</a></li>
                     </ul>
                 </nav>
                 <!-- nav hover_02 -->
                 <nav class="nav">
                     <h2 class="hidden">네비게이션영역</h2>
-                    <ul class="nav_menu hover_02">
+                    <ul class="nav_menu nav_menu_02">
                         <li>Why 유버스 캠퍼스?</li>
                         <li>서비스 소개</li>
                         <li>가입 문의</li>
@@ -59,14 +62,16 @@
                         <li>제휴문의</li>
                     </ul>
                     <ul class="nav_btn">
-                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
-                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
+                        <li class="login_btn">
+                            <a href="#none"/>로그인/회원가입</a>
+                        </li>
+                        <li class="my_room_btn"><a href="#none"/>마이룸 입장</a></li>
                     </ul>
                 </nav>
                 <!-- nav hover_03 -->
                 <nav class="nav">
                     <h2 class="hidden">네비게이션영역</h2>
-                    <ul class="nav_menu">
+                    <ul class="nav_menu nav_menu_01">
                         <li>Why 유버스 캠퍼스?</li>
                         <li>서비스 소개</li>
                         <li>가입 문의</li>
@@ -75,15 +80,16 @@
                         <li>제휴문의</li>
                     </ul>
                     <ul class="nav_btn">
-                        <!-- 로그인 상태 -->
-                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#">홍길동님</a></li>
-                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
+                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#none">홍길동님</a></li>
+                        <li class="my_room_btn"><a href="#none"/>마이룸 입장</a></li>
                     </ul>
                 </nav>
             </header>
             <!--// header  -->
+
             <!-- main  -->
             <main class="container">         
+                <div class="modal_back"></div>
                 <div class="contents main" id="contents">       
                     <section class="sec1">
                         <div class="swiper sec1_mySwiper">
@@ -114,42 +120,46 @@
                         </div>
                     </section>
                     <section class="sec2">
-                        <p class="gra_text">UVERSE(유버스)여야 하는 이유</p>
+                        <p class="pink_gra_text">UVERSE(유버스)여야 하는 이유</p>
                         <h4 class="sec_title">왜 UVERSE를 선택해야 할까요?</h4>
-                        <div class="sec2_img_01"></div>
+                        <img class="sec2_img_01" src="../resources/images/campus_pc_sec2_01.png" alt="이미지">
                         <ul class="sec2_con">
-                            <li class="con_inner_01">
+                            <li>
+                                <img src="../resources/images/campus_pc_sec2_02.png" alt="이미지">
                                 <dl>
                                     <dt class="con_title">실제 학교 건물과 똑같은 캠퍼스</dt>
                                     <dd class="con_text">실제 학교에 있는 듯 똑같은 건물에서 수업<br>을 듣고, 우리 학교에만 있는<br>공간 그대로 이용할 수 있어요.</dd>
                                 </dl>
                             </li>
-                            <li class="con_inner_02">
+                            <li>
+                                <img src="../resources/images/campus_pc_sec2_03.png" alt="이미지">
                                 <dl>
                                     <dt class="con_title">인증 받은 우리 학교 학생만 이용</dt>
                                     <dd class="con_text">학교 이메일 주소로 인증 받은 우리 학교<br>학생만 이용할 수 있어요 안전해요.<br>다른 학교 학생은 학교에서 설정한 공간만<br>들어올 수 있어요.</dd>
                                 </dl>
                             </li>
-                            <li class="con_inner_03">
+                            <li>
+                                <img src="../resources/images/campus_pc_sec2_04.png" alt="이미지">
                                 <dl>
                                     <dt class="con_title">우리 학교 전용 웹페이지로 접속</dt>
                                     <dd class="con_text">따로 앱 설치할 필요없이 우리 학교 전용<br>웹페이지로 접속할 수 있어 편리해요.</dd>
                                 </dl>
                             </li>
-                            <li class="con_inner_04">
+                            <li>
+                                <img src="../resources/images/campus_pc_sec2_05.png" alt="이미지">
                                 <dl>
                                     <dt class="con_title">우리 학교 맞춤 기능 이용</dt>
                                     <dd class="con_text">우리 학교 커리큘럼에 맞는 기능을<br>전문가가 직접 만들어줘요.</dd>
                                 </dl>
                             </li>
                         </ul>
-                        <div class="sec2_img_02"></div>
+                        <img class="sec2_img_02" src="../resources/images/campus_pc_sec2_06.png" alt="이미지">
                     </section>
                     <section class="sec3">
                         <div class="sec3_con">
                             <div class="sec3_img_01"></div>
-                            <div class="con_inner_01">
-                                <span class="gra_text">누가 이용하나요?</span>
+                            <div class="con_inner">
+                                <span class="pink_gra_text">누가 이용하나요?</span>
                                 <dl>
                                     <dt class="con_title">인증 받은 우리 학교 학생</dt>
                                     <dd class="con_text">우리 학교 건물 하나 하나 그대로 메타버스 공간에서<br>만나보세요. 오직 학교가 인증한 학생만<br>따로 앱 설치할 필요없이 전용 웹페이지로<br>언제 어디서나 쉽게 접속할 수 있어요.</dd>
@@ -157,7 +167,7 @@
                             </div>
                         </div>
                         <div class="sec3_con">
-                            <div class="con_inner_02">
+                            <div class="con_inner">
                                 <span class="pink_text">누가 이용하나요?</span>
                                 <dl>
                                     <dt class="con_title">우리 학교 예비 입학생과<br>입학 희망 고등학생</dt>
@@ -168,7 +178,7 @@
                         </div>
                     </section>
                     <section class="sec4">
-                        <p class="gra_text">이렇게 이용하세요</p>
+                        <p class="pink_gra_text">이렇게 이용하세요</p>
                         <h4 class="sec_title">이렇게 이용하세요</h4>
                         <div class="sec4_con">
                             <ul class="swiper_btn">
@@ -315,33 +325,24 @@
                             </li>
                         </ul>
                     </section>
-                    <footer class="footer" id="footer"> 
-                        <div class="inner_wrap">
-                            <div class="footer_top">
-                                <p class="footer_top_text">가입/일반문의 1544-0001<span class="footer_s_text">(평일 09:00 - 18:00)</span></p>
-                            </div>
-                            <div class="footer_bar"></div>
-                            <ul class="footer_body">
-                                <li><a href="#none">회사소개</a></li>
-                                <li><a href="#none">이용약관</a></li>
-                                <li><a href="#none">개인정보처리방침</a></li>
-                            </ul>
-                            <ul class="footer_bottom">
-                                <li>㈜엘지유플러스 주소 서울특별시 용산구 한강대로</li>
-                                <li>대표이사 황현식</li>
-                                <li>사업자등록번호 220-81-39938</li>
-                                <li>통신판매신고 제 2015-서울용산-00481호</li>
-                                <li>사업자정보확인</li>
-                                <li>고객센터 1544-0001</li>
-                            </ul>
-                        </div> 
+
+                     <!--// footer -->
+                     <footer class="footer" id="footer"> 
                     </footer>
+                     <!--// footer -->
+                     
                 </div>
             </main>
             <!--// main  -->
         </div>
         <!--// wrapper -->
     </div>
-    <script type="text/javascript" src="../resources/js/campus_pc.js"></script>
+<script type="text/javascript" src="../resources/js/campus_pc.js"></script>
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#footer').load('/html/main_footer_pc.html');
+    });
+</script>
 </body>
 </html>

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_mo.css">
@@ -13,36 +16,40 @@
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff'>
     <script>
-        // <![CDATA[
-        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
-        catch (e) { }
-  // ]]>
-    </script>
+		// <![CDATA[
+		try {
+			window.addEventListener('load', function () {
+				setTimeout(scrollTo, 0, 0, 1);
+			}, false);
+		} catch (e) { }
+        // ]]>
+	</script>
 </head>
 <body>
     <div id="root" class="root">
         <!-- wrapper -->
         <div class="wrapper" id="wrapper">
-            <!-- header  -->
-            <header class="header mn_open" id="header">
+            <div class="modal_back modal_back_open"></div>
+
+            <header class="main_header" id="header">
                 <div class="inner-wrap">
-                    <div class="header_top">
-                        <h1><a href="#none"><img class="uverse_logo" src="../resources/images/uverse_logo_mo.png" alt="유버스"></a></h1>
-                        <a href="#" id="menu_btn">
-                            <span class="mainMenu_bar">메뉴열기</span>
+                    <h1><a href="#none">UVERSE(유버스)</a></h1>
+                    <div class="menuOpen menuOpen_open">
+                        <a href="#">
+                            <span class="bar"></span>
                         </a>
                     </div>
+                    <nav id="gnb">
+                        <ul class="mainMenu mainMenu_open">
+                            <li class="depth1"><a href="#">UVERSE-SCHOOL <br/>  
+                            <span class="mainMenu_btn">유버스 스쿨(초중고) 바로가기</span></a></li>
+                            <li class="depth1"><a href="#">UVERSE-SCHOOL <br/>  
+                            <span class="mainMenu_btn">유버스 스쿨(초중고) 바로가기</span></a></li>
+                        </ul>
+                    </nav>
                 </div>
             </header>
-            <nav id="gnb">
-                <ul class="mainMenu">
-                   <li class="depth1"><a href="#">UVERSE-SCHOOL <br/>  
-                    <span class="mainMenu_btn">유버스 스쿨(초중고) 바로가기</span></a></li>
-                  <li class="depth1"><a href="#">UVERSE-SCHOOL <br/>  
-                    <span class="mainMenu_btn">유버스 스쿨(초중고) 바로가기</span></a></li>
-                </ul>
-            </nav>
-            <!--// header  -->
+            
             <!-- main  -->
             <main class="container">
                 <div class="contents main" id="contents">
@@ -184,32 +191,24 @@
                             <li><p>자주하는 질문/튜토리얼</p><button class="sec6_menu_btn">바로가기</button></li>
                         </ul>
                     </section>
-                    <footer class="footer" id="footer"> 
-                        <div class="inner_wrap">
-                            <div class="footer_top">
-                                <p class="footer_top_text">가입/일반문의 1544-0001<span class="footer_s_text">(평일 09:00 - 18:00)</span></p>
-                            </div>
-                            <ul class="footer_body">
-                                <li><a href="#none">회사소개</a></li>
-                                <li><a href="#none">이용약관</a></li>
-                                <li><a href="#none">개인정보처리방침</a></li>
-                            </ul>
-                            <ul class="footer_bottom">
-                                <li>㈜엘지유플러스 주소 서울특별시 용산구 한강대로</li>
-                                <li>대표이사 황현식</li>
-                                <li>사업자등록번호 220-81-39938</li>
-                                <li>통신판매신고 제 2015-서울용산-00481호</li>
-                                <li>사업자정보확인</li>
-                                <li>고객센터 1544-0001</li>
-                            </ul>
-                        </div>  
+
+                     <!--// footer -->
+                     <footer class="footer" id="footer"> 
                     </footer>
+                     <!--// footer -->
+
                 </div>
             </main>
             <!--// main  -->
         </div>
         <!--// wrapper -->
     </div>
-    <script type="text/javascript" src="../resources/js/common_mo.js"></script>
+<script type="text/javascript" src="../resources/js/common_mo.js"></script>
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#footer').load('/html/main_footer_mo.html');
+    });
+</script>
 </body>
 </html>
