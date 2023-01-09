@@ -974,3 +974,48 @@ p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085
 .layer.certification{margin-top: -18px;}
 .layer.birth_layer>*{justify-content: space-evenly;}
 }
+
+
+/* campus_connect_priagree_pc 박용기 생성 */
+@media (max-width: 768px) {
+  .layer.priagree {position: fixed;}
+  .layer.priagree>* {width: 300px; height: 34em;}
+  .layer.priagree .layer-header {display: none;}
+  .layer.priagree .layer-contents {overflow-y: unset;display: flex;justify-content: space-between;flex-direction: column;margin: 24px 0px;padding-top:0px;}
+  .layer.priagree .layer-contents .priagree-cotents .text {line-height: 18px ;}
+  .layer.priagree .layer-contents .priagree-cotents p.text {letter-spacing: 0.4px;}
+  .layer.priagree .layer-contents .priagree-cotents ol.text {letter-spacing: -0.4px;}
+  .layer.priagree .layer-contents .priagree-cotents p.text-bl {letter-spacing: -0.2px;}
+  .layer.priagree .layer-btns .sec-btn {height: 40px; padding: 0; font-size: 14px;}
+  .layer.priagree .layer-btns {display: flex;gap: 4px;width: 100%;}
+  .layer.type2>* {width: 300px;}
+}
+
+.layer.priagree>* {border-radius: 8px;height: 32em;}
+.layer.priagree .form-label {font-size: 14px; padding-bottom: 10px; text-align: center;}
+p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085;}
+
+.layer.priagree .layer-contents .layer-btns .sec-btn {margin-top:0px;}
+.layer.priagree .layer-btns {display: flex;gap: 4px;width: 100%;}
+.layer.priagree .layer-btns .confirm { background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);}
+ 
+.layer.priagree .layer-contents {overflow-y: unset;display: flex;justify-content: space-between;flex-direction: column; margin: 24px 0px  0px 0px; padding-top: 0px;}
+.layer.priagree .layer-contents>* { padding-right: 0px;}
+.layer.priagree .layer-contents .priagree-cotents {margin:0px 20px 10px 20px;height:29em; overflow-y: auto;text-align:left;font-size: 12px; line-height: 18px; color: #667085; letter-spacing: 0.1px;}
+.layer.priagree .layer-contents .priagree-cotents .text{margin-bottom: 20px; font-size: 12px; line-height: 18px; color: #667085; letter-spacing: 0.1px;word-break: keep-all;}
+.layer.priagree .layer-contents .priagree-cotents h3,h4 {font-size: 13px;line-height: 18px;font-weight: 700;margin-bottom: 5px;}
+.layer.priagree .layer-contents .priagree-cotents ol.type1 {margin-left:10px;}
+.layer.priagree .layer-contents .priagree-cotents ol.type1 li {margin-bottom:20px;}
+.layer.priagree .layer-contents .priagree-cotents ol.type1 li p {margin:0 0 5px 14px;}
+.layer.priagree .layer-contents .priagree-cotents ol.type1 li li {margin:0 0 5px 5px;}
+.layer.priagree .layer-contents .priagree-cotents ol.type2 li {margin:0 0 0px 10px;background: url() no-repeat center;}
+p[class^="text"][class*="-bl"] {font-size: 15px; font-weight: 700;color: #667085;}
+
+.layer.type2>* {width: 300px; padding: 0; height: 20em; border-radius: 8px;}
+.layer.type2 .layer-contents .priagree-cotents {height:14em; overflow-y: auto;}
+
+table.priagree {margin-bottom: 20px;border: 1px solid #8A91A4;border-collapse: collapse;}
+table.priagree th, td {border: 1px solid #8A91A4; padding: 5px; text-align:center;font-size: 11px; line-height: 16px; color: #667085; letter-spacing: 0.1px;word-break: keep-all;}
+table.priagree th {background-color:0 0 0 0.5;}
+
+.layer.priagree .layer-btns .sch { color:#2B2F44; background: linear-gradient(269.8deg, #C4D600 1.9%, #16E29D 101.37%) }
