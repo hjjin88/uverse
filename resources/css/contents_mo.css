@@ -4,8 +4,8 @@
 .main_header{position:fixed;left:0; top: 0;width: 100%;min-width: 360px;height: 52px;margin: 0 auto;z-index: 30; background: #000;border-bottom: 1px solid rgba(102, 112, 133, 0.15);}
 .main_header h1{width: 158px;height: 22px;margin: 16px 24px;background: url(../../resources/images/uverse_logo_mo.png) center no-repeat;}
 .main_header h1 a{display:block;overflow:hidden; width:158px; height:22px; text-indent: -999px;}
-.main_header .menuOpen{display:block;position: absolute;top: 50%;right: 5%;width: 22px;height: 17px;z-index: 11;transform: translate(-5%, -50%);transition: all 0.3s ease;}
-.main_header .mainMenu.open{right: 0;}
+.main_header .menuOpen{display:block;position: absolute;top: 50%;right: 5%;width: 22px;height: 17px;z-index: 11;transform: translate(-5%, -50%);transition: all 0.3s ease;cursor:pointer;}
+.main_header .mainMenu.open{right: 0;cursor:pointer;}
 .main_header .menuOpen .bar{display: block;position: relative;top: 9px;left: 0;width: 0;height: 2px;border-radius: 3px;background:#fff;}
 .main_header .menuOpen .bar:before{content:'';position: absolute; left: 0;top: 0;	width: 22px;height: 2px;border-radius: 3px;background:#0F182A;transition: transform 0.1s;}
 .main_header .menuOpen .bar:after{content:'';position: absolute; left: 0;top: 0;width: 22px;height: 2px;border-radius: 3px;background: #fff;transition: transform 0.1s;}
@@ -20,10 +20,17 @@
 .main_header .mainMenu .depth1 .mainMenu_btn{font-family: 'Pretendard';font-style: normal;font-weight: 500;font-size: 13px;line-height: 16px;color: #667085;} 
 
 /* main_home_mn_open_mo */
-.main_header .mainMenu_open{right: 0;}
-.modal_back.modal_back_open{display: block;}
+.main_header .mainMenu_open{right: 0;cursor:pointer;}
+.main_header .menuOpen.menuOpen_open .bar{background: #fff;}
 .main_header .menuOpen.menuOpen_open .bar:before{content:'';position: absolute; left: 0;top: 0;	width: 22px;height: 2px;border-radius: 3px;background:#0F182A;transition: transform 0.1s;transform: rotate(45deg);}
 .main_header .menuOpen.menuOpen_open .bar:after{content:'';position: absolute; left: 0;top: 0;width: 22px;height: 2px;border-radius: 3px;background: #0F182A;transition: transform 0.1s;transform: rotate(-45deg);}
+/* campus_name_mo */
+.uverse_header .mainMenu.mainMenu_open{right: 0;cursor:pointer;}
+
+/* 팝업 백그라운드 */
+.modal_back{display: none;position: fixed;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100vh;z-index: 10;background: rgba(0, 0, 0, .6);}
+.modal_back_open{display: block;}
+
 @media screen and (max-width: 360px){
 .main_header .mainMenu{width: 74%;}
 }
@@ -189,7 +196,7 @@ section{position: relative;overflow: hidden;text-align: center;}
 .uverse_header{position:fixed;left:0; top: 0;width: 100%;min-width: 360px;height: 52px;margin: 0 auto;z-index: 30; background: #fff;border-bottom: 1px solid rgba(102, 112, 133, 0.15);}
 .uverse_header h1{width: 158px;height: 22px;margin: 16px 24px;background: url(../../resources/images/campus_mo_logo.png) center no-repeat;}
 .uverse_header h1 a{display:block;overflow:hidden; width:158px; height:22px; text-indent: -999px;}
-.uverse_header .menuOpen{display:block;position: absolute;top: 50%;right: 5%;width: 22px;height: 17px;z-index: 2;transform: translate(-5%, -50%);transition: all 0.3s ease;}
+.uverse_header .menuOpen{display:block;position: absolute;top: 50%;right: 5%;width: 22px;height: 17px;z-index: 2;transform: translate(-5%, -50%);transition: all 0.3s ease;cursor: pointer;}
 .uverse_header .mainMenu.open{right: 0;pointer-events: all;}
 .uverse_header .menuOpen .bar{display: block;position: relative;top: 9px;left: 0;width: 0;height: 2px;border-radius: 3px;background:#333;}
 .uverse_header .menuOpen .bar:before{content:'';position: absolute; left: 0;top: 0;	width: 22px;height: 2px;border-radius: 3px;background:#333;transition: transform 0.1s;}
@@ -242,14 +249,13 @@ section{position: relative;overflow: hidden;text-align: center;}
 .change_nic_box .change_btn:focus{background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);font-weight: 700;color: #FFFFFF;opacity: 1;} 
 .change_nic_box .nic_box_desc{position: relative;padding: 1px 1px 16px 17px;font-weight: 400;font-size: 12px;line-height: 12px;letter-spacing: -0.01em;color: #F52C1D;text-align: left;}
 .change_nic_box .nic_box_desc::before{content: '!';position:absolute ;top: 0;left: 0;width: 16px;height: 16px;padding: 2.5px 6.5px;color: #fff;background: #F52C1D;border-radius: 100%;}
-.change_nic_box .close_btn{position: relative;top: 0;left: 275px;width: 12px;height: 12px;}
+.change_nic_box .close_btn{position: relative;top: 0;left: 245px;width: 12px;height: 12px;}
 .change_nic_box .close_btn:before, .close_btn:after {content: ' ';position: absolute;top: 0;left: 6px;width: 1.2px;height: 12px;background-color: #151619;}
 .change_nic_box .close_btn:before {transform: rotate(45deg);}
 .change_nic_box .close_btn:after {transform: rotate(-45deg);}
 @media (max-width: 360px){
 .uverse_header .mainMenu{width: 87%;}
 .change_nic_box{margin-top: -208px;margin-left: -40%;}
-.change_nic_box .close_btn{left: 246px;}
 }
 /* 스쿨 */
 .school_mo_wrap  #gnb .my_room a{background: linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), linear-gradient(267.74deg, #C4D600 0%, #16E29D 99.74%);-webkit-background-clip: text;-webkit-text-fill-color: transparent;font-weight: 700;font-size: 16px;line-height: 18px;}
@@ -556,7 +562,7 @@ p[class^="text"][class*="-sm"] {font-weight: 500; font-size: 15px; line-height: 
 .container.Partnership {padding-top: 40px;}
 #Partnership {text-align: center; width: 100%; margin: 0 auto; color: #0F182A; padding: 0 20px;}
 .Partnership fieldset {text-align: left;}
-.Partnership .page-title {font-size: 26px; line-height: 26px; font-weight: 700; padding-bottom: 56px;}
+.Partnership .page-title {font-size: 26px; line-height: 26px; font-weight: 700;padding-top: 40px; padding-bottom: 56px;}
 .Partnership .form-notice.title {font-size: 14px; justify-content: flex-end; color: #0EC998; font-weight: 500;}
 .Partnership dl {padding-bottom: 10px;}
 .Partnership dl.last {padding-bottom: 0; padding-top: 16px;}
@@ -600,7 +606,7 @@ thead { background: #E6E8F1;color: #3E4A62;}
 .layer-header .layer-title {font-size: 16px; font-weight: 700;letter-spacing: 0.01em;color: #0F182A;}
 .layer-contents {padding-top: 10px; display: flex; justify-content: center; align-items: center;}
 .layer-contents .inner-html {font-size: 14px; font-weight: 500; color: #667085;}
-.layer-btns .sec-btn {padding: 16px; font-size: 14px; font-weight: 700; margin-top: 24px; width: 100%; border-radius: 8px; color: #fff;}
+.layer-btns .sec-btn{padding: 16px; font-size: 14px; font-weight: 700; margin-top: 24px; width: 100%; border-radius: 8px; color: #fff;background: linear-gradient(270.23deg, #10DFA8 0.39%, #6F0EEC 42.68%, #A93AFC 78.78%, #F659FF 107.68%);}
 
 
 @media (max-width: 360px){
@@ -979,7 +985,7 @@ p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085
 /* campus_connect_priagree_pc 박용기 생성 */
 @media (max-width: 768px) {
   .layer.priagree {position: fixed;}
-  .layer.priagree>* {width: 300px; height: 34em;}
+  .layer.priagree>* {width: 320px; height: 34em;}
   .layer.priagree .layer-header {display: none;}
   .layer.priagree .layer-contents {overflow-y: unset;display: flex;justify-content: space-between;flex-direction: column;margin: 24px 0px;padding-top:0px;}
   .layer.priagree .layer-contents .priagree-cotents .text {line-height: 18px ;}
@@ -997,7 +1003,7 @@ p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085
 
 .layer.priagree .layer-contents .layer-btns .sec-btn {margin-top:0px;}
 .layer.priagree .layer-btns {display: flex;gap: 4px;width: 100%;}
-.layer.priagree .layer-btns .confirm { background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);}
+.layer.priagree .layer-btns .confirm { background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);border-radius: 0 0 8px 8px;}
  
 .layer.priagree .layer-contents {overflow-y: unset;display: flex;justify-content: space-between;flex-direction: column; margin: 24px 0px  0px 0px; padding-top: 0px;}
 .layer.priagree .layer-contents>* { padding-right: 0px;}

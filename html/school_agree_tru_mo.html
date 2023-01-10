@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_mo.css">
@@ -20,17 +23,10 @@
 <body class="color">
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper uverse_wrap school_mo_wrap" id="wrapper">
+
             <!-- header  -->
-            <header class="header campus" id="header">
-                <div class="inner-wrap">
-                    <div class="header_top">
-                        <h1><a href="#none"><img class="uverse_logo" src="../resources/images/campus_mo_logo.png" alt="유버스"></a></h1>
-                        <a href="#none" id="menu_btn">
-                            <span class="mainMenu_bar">메뉴열기</span>
-                        </a>
-                    </div>
-                </div>
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
 
@@ -108,13 +104,16 @@
                             <button type="button" class="sec-btn sch">확인</button>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            <!--// layer  -->
-
         </div>
         <!--// wrapper -->
     </div>
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/school_header_mo.html');
+    });
+</script>
 </body>
 </html>

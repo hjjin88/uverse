@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
-    <link rel="stylesheet" href="../resources/css/campus_pc.css">
+    <link rel="stylesheet" href="../resources/css/contents_pc.css">
     <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
     <script type="text/javascript" src="../resources/js/prefixfree.min.js"></script>
     <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
@@ -18,13 +18,14 @@
 <body>
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper school_pc_wrap" id="wrapper">
-            
+        <div class="wrapper uverse_wrap school_pc_wrap" id="wrapper">
+            <div class="modal_back_open"></div>
+
             <!-- header  -->
-            <header class="uvers_header" id="header">
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
-
+            
             <!-- 로그인 버튼 팝업 -->
             <div class="login_btn_box" style="display: block;">
                 <ul>
@@ -49,11 +50,9 @@
                     </dlv>
                 </div>
             </div>
-            <!--// header  -->
             <!-- main  -->
             <main class="container">         
-                <div class="modal_back" style="display: block;"></div>
-                <div class="contents main" id="contents">       
+                <div class="contents" id="contents">       
                     <section class="sec1">
                         <div class="swiper sec1_mySwiper">
                             <div class="swiper-wrapper">
@@ -294,17 +293,6 @@
         <!--// wrapper -->
     </div>
 <script type="text/javascript" src="../resources/js/campus_pc.js"></script>
-<script>
-    function nic_box(){
-        $(".change_nic_box, .modal_back").show();
-    }
-    function login_btn(){
-        $(".login_btn_box").show();
-    }
-    function pop_hide(){
-        $(".change_nic_box, .modal_back").hide();
-    }
-</script>
 <script>
     // temp
     $('document').ready(function(){

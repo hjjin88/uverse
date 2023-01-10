@@ -1,7 +1,11 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" class=" -webkit-">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no, address=no, email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
     <link rel="stylesheet" href="../resources/css/contents_pc.css">
@@ -14,40 +18,13 @@
 <body class="color">
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper uverse_wrap school_pc_wrap" id="wrapper">
+
             <!-- header  -->
-            <header class="header" id="header">
-                <div class="header_inner">
-                    <h1><a href="#none"><img src="../resources/images/campus_pc_logo.png" alt="유버스-캠퍼스"></a></h1>
-                    <nav class="gnb" id="gnb">
-                        <ul>
-                            <li class="gnb_off"><a href="#none">홈</a></li>
-                            <li class="gnb_off"><a href="#none">유버스 스쿨(초중고)</a></li>
-                            <li class="gnb_on"><a href="#none">유버스 캠버스(대학)</a></li>
-                        </ul>
-                    </nav>
-                    </div>
-                <span class="header_boder"></span>
-                <!-- nav hover_01 -->
-                <nav class="nav">
-                    <h2 class="hidden">네비게이션영역</h2>
-                    <ul class="nav_menu">
-                        <li>Why 유버스 캠퍼스?</li>
-                        <li>서비스 소개</li>
-                        <li>가입 문의</li>
-                        <li>자주묻는 질문</li>
-                        <li>토튜리얼(FAQ)</li>
-                        <li>제휴문의</li>
-                    </ul>
-                    <ul class="nav_btn">
-                        <!-- 로그인 상태 -->
-                        <li class="login_on"><img src="../resources/images/campus_pc_login_on.png" alt=""><a href="#">홍길동님</a></li>
-                        <li class="login_btn"><a href="#">로그인/회원가입</a></li>
-                        <li class="my_room_btn"><a href="#">마이룸 입장</a></li>
-                    </ul>
-                </nav>
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
+
 
             <!-- layer  -->
             <div class="layer account priagree">
@@ -200,13 +177,16 @@
                             <button type="button" class="sec-btn sch">확인</button>
                         </div>
                     </div>
-                    
                 </div>
             </div>
-            <!--// layer  -->
-
         </div>
         <!--// wrapper -->
     </div>
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/school_header_pc.html');
+    });
+</script>
 </body>
 </html>

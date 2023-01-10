@@ -14,29 +14,19 @@
     <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <script>
-		// <![CDATA[
-		try {
-			window.addEventListener('load', function () {
-				setTimeout(scrollTo, 0, 0, 1);
-			}, false);
-		} catch (e) { }
-        // ]]>
-	</script>
+        // <![CDATA[
+        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
+        catch (e) { }
+    // ]]>
+    </script>
 </head>
 <body>
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper uverse_wrap" id="wrapper">
+
             <!-- header  -->
-            <header class="header campus" id="header">
-                <div class="inner-wrap">
-                    <div class="header_top">
-                        <h1><a href="#none"><img class="uverse_logo" src="../resources/images/campus_mo_logo.png" alt="유버스"></a></h1>
-                        <a href="#none" id="menu_btn">
-                            <span class="mainMenu_bar">메뉴열기</span>
-                        </a>
-                    </div>
-                </div>
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
 
@@ -91,9 +81,7 @@
 <script>
     // temp
     $('document').ready(function(){
-        $('#header').load('../../sub_header.html');
-        $('#footer').load('../../main_footer.html');
-        $('.popup-pdf-mobile').load('../../download_popup.html');
+        $('#header').load('/html/campus_header_mo.html');
     });
 </script>
 </body>

@@ -14,22 +14,19 @@
     <script type="text/javascript" src="../resources/js/swiper-bundle.min.js"></script>
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <script>
-		// <![CDATA[
-		try {
-			window.addEventListener('load', function () {
-				setTimeout(scrollTo, 0, 0, 1);
-			}, false);
-		} catch (e) { }
-        // ]]>
-	</script>
+        // <![CDATA[
+        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
+        catch (e) { }
+    // ]]>
+    </script>
 </head>
 <body class="color">
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper uverse_wrap" id="wrapper">
+
             <!-- header  -->
-            <header class="header" id="header">
-                
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
 
@@ -127,51 +124,38 @@
                     
                 </div>
             </div>
-            <!--// layer  -->
-
         </div>
         <!--// wrapper -->
     </div>
-    <script>
-
-
-		var $tab = $('.ui-tab');
-
-		$tab.each(function(){
-			if( $(this).data('init') ) return;
-			$(this).data('init' , true);
-
-			var $this = $(this);
-			var $tabMenu = $this.find('.tab-menu');
-			var $tabBtn = $('[role="tab"]', $tabMenu);
-			var $tabContents = $this.find('.tab-contents>div');
-			
-			$tabBtn.on('click.default' , function(e){
-				var _this = $(this);
-				var indexNum = _this.index();
-				var _tabContent = $tabContents.eq( indexNum );
-				
-				$tabBtn.not(_this).removeClass('active');
-				$tabBtn.not(_this).attr('aria-selected', false);
-				_this.addClass('active');
-				_this.attr('aria-selected', true);
-				$tabContents.not(_tabContent).attr('hidden', true);
-				_tabContent.removeAttr('hidden');
-				
-				if($(this).is('a')){
-					e.preventDefault();
-				}
-			});
-		});
-        
-
-    </script>
+<script>
+    var $tab = $('.ui-tab');
+    $tab.each(function(){
+        if( $(this).data('init') ) return;
+        $(this).data('init' , true);
+        var $this = $(this);
+        var $tabMenu = $this.find('.tab-menu');
+        var $tabBtn = $('[role="tab"]', $tabMenu);
+        var $tabContents = $this.find('.tab-contents>div');
+        $tabBtn.on('click.default' , function(e){
+            var _this = $(this);
+            var indexNum = _this.index();
+            var _tabContent = $tabContents.eq( indexNum );
+            $tabBtn.not(_this).removeClass('active');
+            $tabBtn.not(_this).attr('aria-selected', false);
+            _this.addClass('active');
+            _this.attr('aria-selected', true);
+            $tabContents.not(_tabContent).attr('hidden', true);
+            _tabContent.removeAttr('hidden');
+            if($(this).is('a')){
+                e.preventDefault();
+            }
+        });
+    });
+</script>
 <script>
     // temp
     $('document').ready(function(){
-        $('#header').load('../../sub_header.html');
-        $('#footer').load('../../main_footer.html');
-        $('.popup-pdf-mobile').load('../../download_popup.html');
+        $('#header').load('/html/campus_header_mo.html');
     });
 </script>
 </body>

@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <title>UVERSE</title>
     <link rel="stylesheet" href="../resources/css/common.css">
-    <link rel="stylesheet" href="../resources/css/campus_mo.css">
+    <link rel="stylesheet" href="../resources/css/contents_mo.css">
     <link rel="stylesheet" href="../resources/css/swiper-bundle.min.css">
     <script type="text/javascript" src="../resources/js/prefixfree.min.js"></script>
     <script type="text/javascript" src="../resources/js/jquery-3.6.0.min.js"></script>
@@ -16,22 +16,57 @@
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css'>
     <!-- <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff'> -->
     <script>
-		// <![CDATA[
-		try {
-			window.addEventListener('load', function () {
-				setTimeout(scrollTo, 0, 0, 1);
-			}, false);
-		} catch (e) { }
-        // ]]>
-	</script>
+        // <![CDATA[
+        try { window.addEventListener('load', function () { setTimeout(scrollTo, 0, 0, 1); }, false); }
+        catch (e) { }
+    // ]]>
+    </script>
 </head>
 <body>
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
-            
+        <div class="wrapper uverse_wrap" id="wrapper">
+            <div class="modal_back modal_back_open"></div>
+
             <!-- header  -->
-            <header class="uvers_header" id="header">
+            <header class="uverse_header" id="header">
+                <div class="inner-wrap">
+                    <h1><a  href="#none">UVERSE</a></h1>
+                    <div class="menuOpen menuOpen_open">
+                        <a href="#none">
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                    <!-- 네비_02 -->
+                    <nav id="gnb">
+                        <h2 class="hidden">네비게이션영역</h2>
+                        <div class="mainMenu mainMenu_open">
+                            <div class="login_status_02">
+                                <img src="../resources/images/nav_login_img.png" alt="">
+                                <div class="login_af">
+                                    <p class="login_af_title">홍길동님</p>
+                                    <ul class="login_af_text">
+                                        <li><a class="login_af_text_01" href="#none">이메일</a></li>
+                                        <li><a href="#none">닉네임 변경</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="my_room"><a href="#none">마이룸 입장</a></div>
+                            <ul class="nav_manu">
+                               <li class="depth1"><a href="#none">why 유버스 캠퍼스?</a></li>
+                               <li class="depth1"><a href="#none">서비스 소개</a></li>
+                               <li class="depth1"><a href="#none">자주하는 질문/튜토리얼</a></li>
+                               <li class="depth1"><a href="#none">가입 문의</a></li>
+                               <li class="depth1"><a href="#none">제휴 문의</a></li>
+                               <li class="depth1 log_out"><a href="#">로그아웃</a></li>
+                            </ul>
+                            <ul class="home_btns">
+                                <li><a class="home_btn_01" href="#none">홈</a></li>
+                                <li><a href="#none">유버스 스쿨(초중고)</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </header>
             <!--// header  -->
 
@@ -284,10 +319,12 @@
                             </li>
                         </ul>
                     </section>
+
                      <!--// footer -->
                      <footer class="footer" id="footer"> 
                     </footer>
                      <!--// footer -->
+
                 </div>
             </main>
             <!--// main  -->
@@ -296,9 +333,11 @@
     </div>
 <script type="text/javascript" src="../resources/js/campus_mo.js"></script>
 <script>
+document.querySelector(".menuOpen").classList.toggle("toggle");
+</script>
+<script>
     // temp
     $('document').ready(function(){
-        $('#header').load('/html/campus_header_mo.html');
         $('#footer').load('/html/main_footer_mo.html');
     });
 </script>

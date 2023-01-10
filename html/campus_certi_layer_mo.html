@@ -23,17 +23,10 @@
 <body class="color">
     <div id="root" class="root">
         <!-- wrapper -->
-        <div class="wrapper" id="wrapper">
+        <div class="wrapper uverse_wrap" id="wrapper">
+
             <!-- header  -->
-            <header class="header campus" id="header">
-                <div class="inner-wrap">
-                    <div class="header_top">
-                        <h1><a href="#none"><img class="uverse_logo" src="../resources/images/campus_mo_logo.png" alt="유버스"></a></h1>
-                        <a href="#none" id="menu_btn">
-                            <span class="mainMenu_bar">메뉴열기</span>
-                        </a>
-                    </div>
-                </div>
+            <header class="uverse_header" id="header">
             </header>
             <!--// header  -->
 
@@ -140,8 +133,6 @@
                 </dl>
             </div>
             <!--// layer  -->
-
-
             <div class="layer phone" id="dialog1" role="dialog" aria-modal="true" aria-labelledby="dialog_label2" aria-describedby="dialog_desc2" style="" tabindex="-1">
                 <div>
                     <div class="layer-header">
@@ -163,42 +154,38 @@
                 </div>
             </div>
         </div>
-
-        
         <!--// wrapper -->
     </div>
-    <script>
-
-
-		var $tab = $('.ui-tab');
-
-		$tab.each(function(){
-			if( $(this).data('init') ) return;
-			$(this).data('init' , true);
-
-			var $this = $(this);
-			var $tabMenu = $this.find('.tab-menu');
-			var $tabBtn = $('[role="tab"]', $tabMenu);
-			var $tabContents = $this.find('.tab-contents>div');
-			
-			$tabBtn.on('click.default' , function(e){
-				var _this = $(this);
-				var indexNum = _this.index();
-				var _tabContent = $tabContents.eq( indexNum );
-				
-				$tabBtn.not(_this).removeClass('active');
-				$tabBtn.not(_this).attr('aria-selected', false);
-				_this.addClass('active');
-				_this.attr('aria-selected', true);
-				$tabContents.not(_tabContent).attr('hidden', true);
-				_tabContent.removeAttr('hidden');
-				
-				if($(this).is('a')){
-					e.preventDefault();
-				}
-			});
-		});
-
-      </script> 
+<script>
+    var $tab = $('.ui-tab');
+    $tab.each(function(){
+        if( $(this).data('init') ) return;
+        $(this).data('init' , true);
+        var $this = $(this);
+        var $tabMenu = $this.find('.tab-menu');
+        var $tabBtn = $('[role="tab"]', $tabMenu);
+        var $tabContents = $this.find('.tab-contents>div');
+        $tabBtn.on('click.default' , function(e){
+            var _this = $(this);
+            var indexNum = _this.index();
+            var _tabContent = $tabContents.eq( indexNum );
+            $tabBtn.not(_this).removeClass('active');
+            $tabBtn.not(_this).attr('aria-selected', false);
+            _this.addClass('active');
+            _this.attr('aria-selected', true);
+            $tabContents.not(_tabContent).attr('hidden', true);
+            _tabContent.removeAttr('hidden');
+            if($(this).is('a')){
+                e.preventDefault();
+            }
+        });
+    });
+</script> 
+<script>
+    // temp
+    $('document').ready(function(){
+        $('#header').load('/html/campus_header_mo.html');
+    });
+</script>
 </body>
 </html>
