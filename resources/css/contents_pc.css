@@ -719,27 +719,16 @@ p[class^="text"][class*="-bl"] {font-size: 15px; font-weight: 700;color: #667085
 .layer.certification .division_box_03 ul .etc_text:focus{border: 1px solid #65CF60;}
 
 /* campus_connect_priagree_pc 박용기 생성 */
-/* .layer.priagree { background-color: rgba(0, 0, 0, .4); color: #0F182A;} */
 .layer.priagree>* {width: 540px; padding: 0; height: 660px; border-radius: 8px;}
 .layer.priagree .layer-header {justify-content: end; padding: 18.5px 16px; border-bottom: 0px;}
 .layer.priagree .layer-title {font-size: 16px; font-weight: 600;}
 .layer.priagree .layer-close {width: 20px; height: 20px;}
-/* .layer.priagree .layer-close>span {overflow: hidden; display: inline-block; width: 20px; height: 20px; background: url(../../resources/images/layer_clos.png) no-repeat center; color: transparent;} */
 .layer.priagree .layer-contents {display: unset; overflow-y: auto; margin: 0 6px 30px 30px; padding-top: 40px;}
 .layer.priagree .layer-contents>* {padding-right: 20px;}
 
 .layer.priagree .form-label {font-size: 17px; padding-bottom: 24px;}
 .layer.priagree .layer-contents .priagree-cotents {margin:0 20px;height:470px; overflow-y: auto;font-size: 13px; line-height: 18px; color: #667085; letter-spacing: 0.1px;}
-.layer.priagree .layer-contents .priagree-cotents .text{
-    /* margin-bottom: 20px; font-size: 13px; line-height: 18px; color: #667085; letter-spacing: 0.1px;word-break: keep-all; */
-    color: #667085;
-    word-break: keep-all;
-    font-size: 13px;
-    line-height: 140%;
-    font-weight: 400;
-    letter-spacing: -0.01em;
-
-}
+.layer.priagree .layer-contents .priagree-cotents .text{color: #667085;word-break: keep-all;font-size: 13px;line-height: 140%;font-weight: 400;letter-spacing: -0.01em;}
 .layer.priagree .layer-contents .priagree-cotents h3, .layer.priagree .layer-contents .priagree-cotents h4 {font-size: 13px;line-height: 18px;font-weight: 700;margin-bottom: 5px;}
 .layer.priagree .layer-contents .priagree-cotents ol.type1 {margin-left:10px;}
 .layer.priagree .layer-contents .priagree-cotents ol.type1 li {margin-bottom:20px;}
@@ -756,7 +745,7 @@ p[class^="text"][class*="-bl"] {font-size: 15px; font-weight: 700;color: #667085
 .layer.priagree .btn {height: 48px; width: 72px;}
 .layer.priagree .layer-contents .form-control-group .btn{color: #FFFFFF; background: #0F182A; font-size: 13px; font-weight: 700;}
 .layer.priagree .layer-btns {display: flex; gap: 4px; width: 100%;}
-.layer.priagree .layer-btns .sec-btn {margin-top: 0;}
+.layer.priagree .layer-btns .sec-btn {margin-top: 0; border-radius: 0 0 8px 8px;}
 .layer.priagree .layer-btns .cancel {background: #E6E8F1; color: #8A91A4; font-weight: 500;}
 .layer.priagree .layer-btns .confirm  {background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);border-radius: 0 0 8px 8px;}
 .layer.priagree  .form-control>input {font-size: 15px;}

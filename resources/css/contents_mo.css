@@ -967,7 +967,6 @@ p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085
 .layer.certification .layer-btns{padding-right: 20px;}
 .layer.certification .layer-btns .sec-btn:focus{background: linear-gradient(267.74deg, #C4D600 0%, #16E29D 99.74%);opacity: 1;}
 @media (max-width: 420px) {
-.layer.certification{margin-top: -18px;}
 .layer.birth_layer>*{justify-content: space-evenly;}
 }
 
@@ -991,7 +990,7 @@ p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085
 .layer.priagree .form-label {font-size: 14px; padding-bottom: 10px; text-align: center;}
 p[class^="text"][class*="-bl"] {font-size: 13px; font-weight: 700;color: #667085;}
 
-.layer.priagree .layer-contents .layer-btns .sec-btn {margin-top:0px;}
+.layer.priagree .layer-contents .layer-btns .sec-btn {margin-top:0px;border-radius: 0 0 8px 8px;}
 .layer.priagree .layer-btns {display: flex;gap: 4px;width: 100%;}
 .layer.priagree .layer-btns .confirm { background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);border-radius: 0 0 8px 8px;}
  
