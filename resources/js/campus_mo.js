@@ -13,6 +13,7 @@ var swiper = new Swiper(".sec1_mySwiper", {
 
 var tabItem = $('.sec4_con .swiper_btn li');
 var mySwiper = new Swiper('.sec4_mySwiper', {
+  spaceBetween: 0,
   direction: 'horizontal',
   slidesPerView: 1,
   loop: true,
