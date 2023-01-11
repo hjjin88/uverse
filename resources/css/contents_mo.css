@@ -619,8 +619,7 @@ thead { background: #E6E8F1;color: #3E4A62;}
 }
 
 /*campus*/
-.container.campus {padding-top: 60px;}
-.Partnership{padding-top: 60px;}
+.container.uverse_container {padding-top: 52px;}
 /* campus_alliance_mo */
 .alliance .form-notice.title, .alliance .form-label .required:before {color: #F22DAC;}
 .alliance .sec-btn {background: linear-gradient(269.8deg, #C716E3 1.9%, #F22DAC 48.04%, #FEAF6D 101.37%);}
