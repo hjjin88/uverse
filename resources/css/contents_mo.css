@@ -317,7 +317,7 @@ section {position: relative;overflow: hidden;}
 .uverse_wrap .sec4 .swiper-container{width: 100%;height: 100%;}
 .uverse_wrap .sec4 .con_title{font-weight: 700;font-size: 22px;line-height: 40px;color: #2B2F44;}
 .uverse_wrap .sec4 .con_text{padding-top: 10px;font-weight: 500;font-size: 14px;line-height: 140%;color: #8A91A4;}
-.uverse_wrap .sec4 .sec4_mySwiper .swiper-slide div{width: 574px;height: 315px;margin: 0 auto;}
+.uverse_wrap .sec4 .sec4_mySwiper .swiper-slide div{width: 574px;height: 315px;}
 .uverse_wrap .sec4 .sec4_img_01{background: url(../../resources/images/campus_mo_M_sec4_01.png) center no-repeat;}
 .uverse_wrap .sec4 .sec4_img_02{background: url(../../resources/images/campus_mo_M_sec4_02.png) center no-repeat;}
 .uverse_wrap .sec4 .sec4_img_03{background: url(../../resources/images/campus_mo_M_sec4_03.png) center no-repeat;}
