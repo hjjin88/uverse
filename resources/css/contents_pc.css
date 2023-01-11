@@ -515,7 +515,7 @@ body.color{background: linear-gradient(0deg, rgba(230, 232, 241, 0.3), rgba(230,
 .layer.certi .layer-close>span {overflow: hidden; display: inline-block; width: 20px; height: 20px; background: url(../../resources/images/layer_clos.png) no-repeat center; color: transparent;}
 .layer.certi .layer-contents {display: unset; padding: 24px 15px; background: #F7F8FA; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; height: 602px;}
 
-.ui-tab {background: #FFFFFF; border: 1px solid #E6E8F1; border-radius: 8px; padding: 0 15px;}
+.ui-tab {background: #FFFFFF; border: 1px solid #E6E8F1; border-radius: 8px; padding: 0 15px 48px;}
 .button-group {display: flex; align-items: center; justify-content: center; position: relative;}
 .button-group.line-type>* {height: 58px; width: 100%;}
 .button-group.line-type>*:before {content: ''; position: absolute; bottom: 0; left: 50%; right: 50%; height: 2px; transition: .2s;}
