@@ -41,3 +41,28 @@ function changeTab(index) {
 
 
 
+var galleryTop = new Swiper('.gallery-top', {
+  direction: 'horizontal',
+  slidesPerView: 1,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+	 		loop: true,
+			loopedSlides: 10
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 4,
+    //   centeredSlides: true,
+      slidesPerView: 3.5,
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+			loop: true,
+			loopedSlides: 10
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+

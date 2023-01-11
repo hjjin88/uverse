@@ -30,14 +30,14 @@
             </header>
             <!--// header  -->
 
-            <main class="container campus">
-                <div class="contents main" id="contents">
+            <main class="container">
+                <div class="contents" id="contents">
                 <!-- contents  -->
                     <section class="Partnership qna-wrap" id="Partnership">
                         <h3 class="page-title">자주하는 질문</h3>
                         <div class="ui-accordion qna-contents">
                             <!-- 아코디언 1개 -->
-                            <dl class="">
+                            <dl>
                                 <dt class="accordion-title">
                                     <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="panel1" id="acc1id">
                                         <span class="title">자주 묻는 질문들 문구위치입니다. 자주 묻는 질문들 문구 자주 묻는 질문들 문구 자주?</span>
@@ -108,61 +108,60 @@
                             </dl>
                         </div>
                     </section>
+
                      <!--// footer -->
                      <footer class="footer" id="footer"> 
                     </footer>
                      <!--// footer -->
+
                 </div>
             </main>
             <!--// main  -->
         </div>
         <!--// wrapper -->
     </div>
-    <script>
-        var $accordion= $('.ui-accordion');
+<script>
+    var $accordion= $('.ui-accordion');
+    $accordion.each(function(){
+        if( $(this).data('init') || !$(this).find('dl').length ) return;
+        $(this).data('init' , true);
 
-        $accordion.each(function(){
-            if( $(this).data('init') || !$(this).find('dl').length ) return;
-            $(this).data('init' , true);
-
-            var $this = $(this);
-            var isSingle = $this.data('type') == 'single' ? true : false;
-
-            $this.on('click.toggle', '.accordion-trigger', function( evt , isFirst ){
-                var $list = $this.find('dl');
-                var $listAll = $this.find('.accordion-panel');
-                var $listParent = $(this).closest('dl');
-                var $listContent = $(this).closest('dl').find('.accordion-panel');
-                var $trigger = $list.find('.accordion-trigger');
-                var isExpanded = $(this).attr('aria-expanded');
-
-                if( isSingle ){
-                    if( !isFirst ){
-                        $listParent.toggleClass('open');
-                    }
-                    if(isExpanded == 'true'){
-                        $(this).attr('aria-expanded', false);
-                    }else{
-                        $(this).attr('aria-expanded', true);
-                    }
-                    $listContent.stop(true, true).slideToggle();
-                }else{
-                    $list.not($listParent).removeClass('open');
-                    if( !isFirst ){
-                        $listParent.toggleClass('open');
-                    }
-                    if(isExpanded == 'true'){
-                        $(this).attr('aria-expanded', false);
-                    }else{
-                        $(this).attr('aria-expanded', true);
-                    }
-                    $trigger.not($(this)).attr('aria-expanded', false);
-                    $listAll.not($listContent).slideUp();
-                    $listContent.stop(true, true).slideToggle();
+        var $this = $(this);
+        var isSingle = $this.data('type') == 'single' ? true : false;
+        $this.on('click.toggle', '.accordion-trigger', function( evt , isFirst ){
+            var $list = $this.find('dl');
+            var $listAll = $this.find('.accordion-panel');
+            var $listParent = $(this).closest('dl');
+            var $listContent = $(this).closest('dl').find('.accordion-panel');
+            var $trigger = $list.find('.accordion-trigger');
+            var isExpanded = $(this).attr('aria-expanded');
+            if( isSingle ){
+                if( !isFirst ){
+                    $listParent.toggleClass('open');
                 }
-            })
-        });
-    </script>
+                if(isExpanded == 'true'){
+                    $(this).attr('aria-expanded', false);
+                }else{
+                    $(this).attr('aria-expanded', true);
+                }
+                $listContent.stop(true, true).slideToggle();
+            }else{
+                $list.not($listParent).removeClass('open');
+                if( !isFirst ){
+                    $listParent.toggleClass('open');
+                }
+                if(isExpanded == 'true'){
+                    $(this).attr('aria-expanded', false);
+                }else{
+                    $(this).attr('aria-expanded', true);
+                }
+                $trigger.not($(this)).attr('aria-expanded', false);
+                $listAll.not($listContent).slideUp();
+                $listContent.stop(true, true).slideToggle();
+            }
+        })
+    });
+</script>
 <script>
     // temp
     $('document').ready(function(){
