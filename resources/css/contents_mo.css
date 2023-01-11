@@ -330,7 +330,7 @@ section {position: relative;overflow: hidden;}
 .uverse_wrap .sec4 .sec4_img_10{background: url(../../resources/images/campus_mo_M_sec4_02.png) center no-repeat;}
 /* sec4 swiper-bundle 수정부분 */
 .uverse_wrap .sec4 .swiper-slide {display: flex;align-items: center;flex-direction: column;margin-top: 10px;}
-.uverse_wrap .sec4 .swiper-horizontal>.swiper-pagination-bullets, .uverse_wrap .sec4 .swiper-pagination-bullets.swiper-pagination-horizontal, .uverse_wrap .sec4 .swiper-pagination-custom, .uverse_wrap .sec4 .swiper-pagination-fraction{top: auto;bottom: 188px;left: 0;}
+.uverse_wrap .sec4 .swiper-horizontal>.swiper-pagination-bullets, .uverse_wrap .sec4 .swiper-pagination-bullets.swiper-pagination-horizontal, .uverse_wrap .sec4 .swiper-pagination-custom, .uverse_wrap .sec4 .swiper-pagination-fraction{top: auto;bottom: 246px;left: 0;}
 .uverse_wrap .sec4 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .uverse_wrap .sec4 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 var(--swiper-pagination-bullet-horizontal-gap,2px);}
 .uverse_wrap .sec4 .swiper-pagination-bullet-active {background: var(--swiper-pagination-bullet-inactive-color, #667085);}
 
