@@ -1,3 +1,4 @@
+/****************************************************************** main_home ************************************************************************************/
 .wrapper{max-width: 600px;min-width: 360px;min-height: 100%;margin: 0 auto;color: #fff;text-align: center;}
 
 /* main_header */
@@ -435,6 +436,45 @@ section {position: relative;overflow: hidden;}
 .uverse_wrap .sec7 .sec7_con{width: 360px;}
 .uverse_wrap .sec7 .sec_title{font-size: 24px;}
 }
+
+
+/****************************************************************** sec4_모바일 ************************************************************************************/
+
+
+/* sec4_모바일 */
+.uverse_wrap .sec4{display: block;}
+.uverse_wrap .sec4_swiper_mo{display: none;}
+@media screen and (max-width: 420px){
+.uverse_wrap .sec4{display: none;}
+.uverse_wrap .sec4_swiper_mo{display: block;}
+.uverse_wrap .sec4_swiper_mo{background: #F9FAFF;}
+.uverse_wrap .sec4_swiper_mo .swiper-slide-container {display: flex;justify-content: center;align-items: center;height:100%;text-align: center;}
+.uverse_wrap .sec4_swiper_mo .gallery-top {width: 100%;height: 80%;}
+.uverse_wrap .sec4_swiper_mo .gallery-top .swiper-slide-container {display: flex;flex-direction: column;justify-content: center;align-items: center;width: 100%;padding-bottom: 62px;}
+.uverse_wrap .sec4_swiper_mo .gallery-thumbs{height: 20%;padding: 24px 0 22px;box-sizing: border-box;color: #8A91A4;}
+.uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide .swiper-slide-container{width: 100%;height: 100%;padding: 10px 0;font-weight: 600;font-size: 12px;line-height: 12px;letter-spacing: -0.01em;color: #8A91A4;background: #FFFFFF;box-shadow: 0px 5px 20px rgba(112, 144, 176, 0.12);border-radius: 100px;}
+.uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide-container:active,
+.uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide-container:focus{color: #F22DAC;background: rgba(239, 28, 218, 0.1);}
+.uverse_wrap .gallery-top .sec4_img_01{background: url(../../resources/images/campus_mo_S_sec4_01.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_02{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_03{background: url(../../resources/images/campus_mo_S_sec4_03.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_04{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_05{background: url(../../resources/images/campus_mo_S_sec4_05.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_06{background: url(../../resources/images/campus_mo_S_sec4_06.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_07{background: url(../../resources/images/campus_mo_S_sec4_07.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_08{background: url(../../resources/images/campus_mo_S_sec4_08.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_09{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .sec4_img_10{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
+.uverse_wrap .gallery-top .swiper-slide-container .con_text{font-weight: 400;font-size: 14px;line-height: 150%;color: #8A91A4;}
+.uverse_wrap .gallery-top .swiper-slide-container .con_title{padding-top: 13px; padding-bottom: 8px;font-weight: 700;font-size: 16px;line-height: 140%;color: #2B2F44;}
+/* sec4_swiper_mo 스와이프 */
+.uverse_wrap .sec4_swiper_mo .swiper-horizontal>.swiper-pagination-bullets, .uverse_wrap .sec4_swiper_mo .swiper-pagination-bullets.swiper-pagination-horizontal, .uverse_wrap  .sec4_swiper_mo .swiper-pagination-custom, .uverse_wrap .sec4_swiper_mo .swiper-pagination-fraction{bottom: 201px;}
+.uverse_wrap .sec4_swiper_mo .swiper-pagination-bullet{width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,6px));height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,6px));}
+.uverse_wrap .sec4_swiper_mo .swiper-pagination-bullet-active{background: #667085;}
+.school_mo_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide-container:active, .uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide-container:focus{background: #70E66A;color: #2B2F44;}
+}
+
+
 
 /****************************************************************** school_home ************************************************************************************/
 
@@ -1015,38 +1055,3 @@ table.priagree th {background-color:0 0 0 0.5;}
 
 .layer.priagree .layer-btns .sch { color:#2B2F44; background: linear-gradient(269.8deg, #C4D600 1.9%, #16E29D 101.37%) }
 
-
-
-
-
-
-.uverse_wrap .sec4{display: block;}
-.uverse_wrap .sec4_swiper_mo{display: none;}
-@media screen and (max-width: 420px){
-.uverse_wrap .sec4{display: none;}
-.uverse_wrap .sec4_swiper_mo{display: block;}
-.uverse_wrap .sec4_swiper_mo{background: #F9FAFF;}
-.uverse_wrap .sec4_swiper_mo .swiper-slide-container {display: flex;justify-content: center;align-items: center;height:100%;text-align: center;}
-.uverse_wrap .sec4_swiper_mo .gallery-top {width: 100%;height: 80%;}
-.uverse_wrap .sec4_swiper_mo .gallery-top .swiper-slide-container {display: flex;flex-direction: column;justify-content: center;align-items: center;width: 100%;padding-bottom: 62px;}
-.uverse_wrap .sec4_swiper_mo .gallery-thumbs{height: 20%;padding: 24px 0 22px;box-sizing: border-box;color: #8A91A4;}
-.uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide .swiper-slide-container{width: 100%;height: 100%;padding: 10px 0;font-weight: 600;font-size: 12px;line-height: 12px;letter-spacing: -0.01em;color: #8A91A4;background: #FFFFFF;box-shadow: 0px 5px 20px rgba(112, 144, 176, 0.12);border-radius: 100px;}
-.uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide-container:active,
-.uverse_wrap .sec4_swiper_mo .gallery-thumbs .swiper-slide-container:focus{color: #F22DAC;background: rgba(239, 28, 218, 0.1);}
-.uverse_wrap .gallery-top .sec4_img_01{background: url(../../resources/images/campus_mo_S_sec4_01.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_02{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_03{background: url(../../resources/images/campus_mo_S_sec4_03.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_04{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_05{background: url(../../resources/images/campus_mo_S_sec4_05.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_06{background: url(../../resources/images/campus_mo_S_sec4_06.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_07{background: url(../../resources/images/campus_mo_S_sec4_07.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_08{background: url(../../resources/images/campus_mo_S_sec4_08.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_09{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .sec4_img_10{background: url(../../resources/images/campus_mo_S_sec4_02.png) center no-repeat;width: 360px;height: 194px;}
-.uverse_wrap .gallery-top .swiper-slide-container .con_text{font-weight: 400;font-size: 14px;line-height: 150%;color: #8A91A4;}
-.uverse_wrap .gallery-top .swiper-slide-container .con_title{padding-top: 13px; padding-bottom: 8px;font-weight: 700;font-size: 16px;line-height: 140%;color: #2B2F44;}
-/* sec4_swiper_mo 스와이프 */
-.uverse_wrap .sec4_swiper_mo .swiper-horizontal>.swiper-pagination-bullets, .uverse_wrap .sec4_swiper_mo .swiper-pagination-bullets.swiper-pagination-horizontal, .uverse_wrap  .sec4_swiper_mo .swiper-pagination-custom, .uverse_wrap .sec4_swiper_mo .swiper-pagination-fraction{bottom: 201px;}
-.uverse_wrap .sec4_swiper_mo .swiper-pagination-bullet{width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,6px));height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,6px));}
-.uverse_wrap .sec4_swiper_mo .swiper-pagination-bullet-active{background: #667085;}
-}

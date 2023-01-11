@@ -412,7 +412,7 @@ table,td,th {border: 1px solid #ACB3C1;}
 td span {position: relative;}
 td span::before {content: '⦁'; position: absolute; top: -2px; left: -12px;}
 thead { background: #E6E8F1;color: #3E4A62;}
-/**/
+
 .form-control.table {padding: 20px 24px; background: #F9FAFF; border: 1px solid #E6E8F1; border-radius: 8px; font-size: 13px; font-weight: 500; line-height: 1.5;}
 .form-control.table th {padding: 4px 0; text-align: center;}
 .form-control.table tbody {text-align: center;}
@@ -447,7 +447,7 @@ thead { background: #E6E8F1;color: #3E4A62;}
 
 /* campus_login_pc */
 body.color{background: linear-gradient(0deg, rgba(230, 232, 241, 0.3), rgba(230, 232, 241, 0.3)), #FFFFFF;}
-/* campus_login_pc */
+
 .profile-drawer { color: #0F182A; margin: 0 auto; width: 440px; padding: 40px; background: #FFFFFF; border: 1px solid rgba(0, 0, 0, 0.1); position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); /* left: calc(50% - 440px/2); top: calc(50% - 679.78px/2);*/ border-radius: 4px;}
 .login .form-label {text-align: left;}
 

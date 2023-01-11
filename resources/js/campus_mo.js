@@ -57,7 +57,7 @@ var galleryTop = new Swiper('.gallery-top', {
     var galleryThumbs = new Swiper('.gallery-thumbs', {
       spaceBetween: 4,
     //   centeredSlides: true,
-      slidesPerView: 3.5,
+      slidesPerView: '3.4',
       touchRatio: 0.2,
       slideToClickedSlide: true,
 			loop: true,
