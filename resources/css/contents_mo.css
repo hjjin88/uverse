@@ -803,6 +803,7 @@ p[class^="text"][class*="-sm"] {font-weight: 500; font-size: 13px; line-height: 
   .layer.certi { width: 100%; position: static;}
   .layer.certi>* {border-radius: 0;}
   .layer.phone>* {width: 300px;}
+  .layer.certi .layer-header{margin-top: 118px;}
 }
 
 
